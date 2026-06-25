@@ -11,7 +11,7 @@ public class ModEntities {
 
     public static final EntityType<TwixyEntity> TWIXY = Registry.register(
         Registries.ENTITY_TYPE,
-        new Identifier("twixy-mod", "twixy"),
+        Identifier.of("twixy-mod", "twixy")
         EntityType.Builder.create(TwixyEntity::new, SpawnGroup.CREATURE)
             .dimensions(0.6f, 0.7f)
             .build()
