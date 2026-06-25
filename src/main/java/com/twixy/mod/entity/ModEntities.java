@@ -17,7 +17,7 @@ public class ModEntities {
             .build("twixy")
     );
 
-    public static void register() {}
+
     public static void register() {
     System.out.println("Twixy entity registered!");
     }
