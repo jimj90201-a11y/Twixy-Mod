@@ -14,8 +14,11 @@ public class ModEntities {
         Identifier.of("twixy-mod", "twixy"),
         EntityType.Builder.create(TwixyEntity::new, SpawnGroup.CREATURE)
             .dimensions(0.6f, 0.7f)
-            .build()
+            .build("twixy')
     );
 
     public static void register() {}
+    public static void register() {
+    System.out.println("Twixy entity registered!");
+    }
 }
