@@ -10,7 +10,7 @@ public class ModSounds {
     public static final SoundEvent TWIXY_MEOW = Registry.register(
         Registries.SOUND_EVENT,
         Identifier.of("twixy-mod", "twixy_meow"),
-        SoundEvent.of(new Identifier("twixy-mod", "twixy_meow"))
+        SoundEvent.of(Identifier.of("twixy-mod", "twixy_meow"))
     );
 
     public static void register() {}
