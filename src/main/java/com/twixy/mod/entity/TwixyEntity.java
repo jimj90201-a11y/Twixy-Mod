@@ -4,6 +4,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.CatEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.world.World;
+import com.twixy.mod.sound.ModSounds;
 
 public class TwixyEntity extends CatEntity {
 
