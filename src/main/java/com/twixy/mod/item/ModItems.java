@@ -11,7 +11,7 @@ public class ModItems {
 
     public static final Item TWIXY_SPAWN_EGG = Registry.register(
         Registries.ITEM,
-        new Identifier("twixy-mod", "twixy_spawn_egg"),
+        Identifier.of("twixy-mod", "twixy_spawn_egg"),
         new SpawnEggItem(ModEntities.TWIXY, 0xaaaaaa, 0x555555, new Item.Settings())
     );
 
