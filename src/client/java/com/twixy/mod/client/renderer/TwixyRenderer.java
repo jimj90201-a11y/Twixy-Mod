@@ -2,7 +2,7 @@ package com.twixy.mod.client.renderer;
 
 import com.twixy.mod.TwixyMod;
 import com.twixy.mod.client.model.TwixyModel;
-import com.twixy.mod.entity.custom.TwixyEntity;
+import com.twixy.mod.entity.TwixyEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.util.Identifier;
