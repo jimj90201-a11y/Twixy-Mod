@@ -1,6 +1,8 @@
 // Made with Blockbench 5.1.4
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
+package com.twixy.mod.client.model;
+
 import net.minecraft.client.render.entity.model.ModelLayerLocation;
 import net.minecraft.util.Identifier;
 import net.minecraft.client.model.*;
