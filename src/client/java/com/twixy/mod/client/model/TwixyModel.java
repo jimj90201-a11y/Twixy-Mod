@@ -1,6 +1,9 @@
 // Made with Blockbench 5.1.4
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
+import net.minecraft.client.render.entity.model.ModelLayerLocation;
+import net.minecraft.util.Identifier;
+
 public class TwixyModel extends EntityModel<Entity> {
 	private final ModelPart body;
 	private final ModelPart belly;
@@ -52,4 +55,9 @@ public class TwixyModel extends EntityModel<Entity> {
 		body.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 		Tail.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
 	}
+	public static final ModelLayerLocation LAYER_LOCATION =
+        new ModelLayerLocation(
+                Identifier.of("twixy-mod", "twixy"),
+                "main"
+        );
 }
