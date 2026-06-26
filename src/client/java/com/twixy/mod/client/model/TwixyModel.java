@@ -3,8 +3,12 @@
 // Paste this class into your mod and generate all required imports
 import net.minecraft.client.render.entity.model.ModelLayerLocation;
 import net.minecraft.util.Identifier;
+import net.minecraft.client.model.*;
+import net.minecraft.client.render.VertexConsumer;
+import net.minecraft.client.render.entity.model.EntityModel;
+import net.minecraft.client.util.math.MatrixStack;
 
-public class TwixyModel extends EntityModel<Entity> {
+public class TwixyModel extends EntityModel<Twixyntity> {
 	private final ModelPart body;
 	private final ModelPart belly;
 	private final ModelPart head;
@@ -13,7 +17,7 @@ public class TwixyModel extends EntityModel<Entity> {
 	private final ModelPart frontLegL;
 	private final ModelPart frontLegR;
 	private final ModelPart Tail;
-	public Twixy(ModelPart root) {
+	public TwixyModel(ModelPart root) {
 		this.body = root.getChild("body");
 		this.belly = this.body.getChild("belly");
 		this.head = this.body.getChild("head");
@@ -48,7 +52,7 @@ public class TwixyModel extends EntityModel<Entity> {
 		return TexturedModelData.of(modelData, 64, 32);
 	}
 	@Override
-	public void setAngles(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setAngles(TwixyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 	}
 	@Override
 	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
