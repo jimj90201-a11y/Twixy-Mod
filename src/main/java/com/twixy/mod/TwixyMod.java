@@ -11,6 +11,8 @@ import net.minecraft.entity.passive.CatEntity;
 
 public class TwixyMod implements ModInitializer {
 
+    public static final String MOD_ID = "twixy-mod";
+
     @Override
     public void onInitialize() {
 
