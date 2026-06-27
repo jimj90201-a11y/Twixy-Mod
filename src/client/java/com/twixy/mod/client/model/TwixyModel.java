@@ -57,10 +57,11 @@ public class TwixyModel extends EntityModel<Twixyntity> {
 	public void setAngles(TwixyEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 	}
 	@Override
-	public void render(MatrixStack matrices, VertexConsumer vertexConsumer, int light, int overlay, float red, float green, float blue, float alpha) {
-		body.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
-		Tail.render(matrices, vertexConsumer, light, overlay, red, green, blue, alpha);
-	}
+public void render(MatrixStack matrices, VertexConsumer vertices,
+                   int light, int overlay, int color) {
+    body.render(matrices, vertices, light, overlay, color);
+    Tail.render(matrices, vertices, light, overlay, color);
+}
 	public static final ModelLayerLocation LAYER_LOCATION =
         new ModelLayerLocation(
                 Identifier.of("twixy-mod", "twixy"),
