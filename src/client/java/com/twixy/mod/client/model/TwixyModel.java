@@ -10,7 +10,7 @@ import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 
-public class TwixyModel extends EntityModel<Twixyntity> {
+public class TwixyModel extends EntityModel<TwixyEntity> {
 	private final ModelPart body;
 	private final ModelPart belly;
 	private final ModelPart head;
