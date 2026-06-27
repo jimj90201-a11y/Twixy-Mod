@@ -10,9 +10,12 @@ import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import com.twixy.mod.entity.TwixyEntity;
-import net.minecraft.client.render.entity.model.ModelLayerLocation;
+import com.twixy.mod.TwixyMod;
+import net.minecraft.client.render.RenderLayer;
 
 public class TwixyModel extends EntityModel<TwixyEntity> {
+	public TwixyModel(ModelPart root) {
+        super(RenderLayer::getEntityCutoutNoCull);
 	private final ModelPart body;
 	private final ModelPart belly;
 	private final ModelPart head;
