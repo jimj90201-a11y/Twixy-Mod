@@ -7,16 +7,17 @@ import net.minecraft.client.model.*;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.VertexConsumer;
 import net.minecraft.client.render.entity.model.EntityModel;
-import net.minecraft.client.render.entity.model.ModelLayerLocation;
+import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
 public class TwixyModel extends EntityModel<TwixyEntity> {
 
-    public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(
-                    Identifier.of(TwixyMod.MOD_ID, "twixy"),
-                    "main"
+    public static final EntityModelLayer LAYER_LOCATION =
+    new EntityModelLayer(
+        Identifier.of(TwixyMod.MOD_ID, "twixy"),
+        "main"
+    
             );
 
     private final ModelPart body;
