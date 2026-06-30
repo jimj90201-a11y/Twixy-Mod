@@ -125,7 +125,7 @@ public class TwixyModel extends EntityModel<TwixyEntity> {
                 ModelTransform.pivot(0.0F, 13.0F, 13.0F)
         );
 
-        return TexturedModelData.of(modelData, 64, 32);
+        return TexturedModelData.of(modelData, 64, 64);
     }
 
     @Override
